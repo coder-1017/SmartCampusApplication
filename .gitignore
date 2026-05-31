@@ -1,0 +1,29 @@
+# ── PYTHON CACHE & SYSTEM CLUTTER ──────────────────────────────────
+# Blocks Python bytecode compilation files (prevents noise in commits)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Blocks operating system metadata files
+.DS_Store
+Thumbs.db
+
+# ── VIRTUAL ENVIRONMENTS ───────────────────────────────────────────
+# Blocks your local dependencies folder (never upload thousands of library files)
+.venv/
+venv/
+ENV/
+env/
+
+# ── STREAMLIT WORKSPACE CONFIGURATIONS ─────────────────────────────
+# Blocks your local Streamlit theme/server configuration overrides
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# ── LOCAL DATA & EXPORTS (OPTIONAL SAFETY) ─────────────────────────
+# Since your Module 06 exports "student_records.csv", this ensures that 
+# if you accidentally download it into your project folder, it won't get committed.
+student_records.csv
+*.log
